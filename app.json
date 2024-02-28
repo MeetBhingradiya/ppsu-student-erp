@@ -1,30 +1,42 @@
 {
-  "expo": {
-    "name": "ppsu-student-erp",
-    "slug": "ppsu-student-erp",
-    "version": "1.0.0",
-    "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
-    "splash": {
-      "image": "./assets/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
-    },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
-    "ios": {
-      "supportsTablet": true
-    },
-    "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      }
-    },
-    "web": {
-      "favicon": "./assets/favicon.png"
+    "expo": {
+        "name": "PPSU",
+        "slug": "ppsu-student-erp",
+        "version": "2.1.0",
+        "orientation": "portrait",
+        "icon": "./assets/icon.png",
+        "userInterfaceStyle": "light",
+        "splash": {
+            "image": "./assets/splash.png"
+        },
+        "assetBundlePatterns": [
+            "**/*"
+        ],
+        "ios": {
+            "supportsTablet": true,
+            "infoPlist": {
+                "NSCameraUsageDescription": "We need access to your camera to take photos.",
+                "NSLocationWhenInUseUsageDescription": "We need your location for some feature."
+            }
+        },
+        "android": {
+            "adaptiveIcon": {
+                "foregroundImage": "./assets/icon.png",
+                "backgroundColor": "#ffffff"
+            },
+            "package": "live.teamsm.ppsuerpapp",
+            "permissions": [
+                "INTERNET",
+                "READ_EXTERNAL_STORAGE"
+            ]
+        },
+        "web": {
+            "favicon": "./assets/icon.png"
+        },
+        "extra": {
+            "eas": {
+                "projectId": "0f6568d8-7f10-4869-a603-57911656b0bc"
+            }
+        }
     }
-  }
 }
